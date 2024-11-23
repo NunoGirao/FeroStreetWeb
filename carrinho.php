@@ -51,9 +51,9 @@
 
    
     const cartData = [
-      { id: 1, nome: "Camisa Dangerous", preco: 29.90, foto: "img/camisa1.jpg", quantidade: 2 },
-      { id: 2, nome: "Camisa Strength", preco: 29.90, foto: "img/camisa2.jpg", quantidade: 1 },
-      { id: 3, nome: "Sweat Leo-Navy", preco: 49.90, foto: "img/sweat1.jpg", quantidade: 1 }
+      { id: 1, nome: "Camisa Dangerous", preco: 29.90, foto: "imgs/camisa1.jpg", quantidade: 2 },
+      { id: 2, nome: "Camisa Strength", preco: 29.90, foto: "imgs/camisa2.jpg", quantidade: 1 },
+      { id: 3, nome: "Sweat Leo-Navy", preco: 49.90, foto: "imgs/sweat1.jpg", quantidade: 1 }
     ];
 
  
