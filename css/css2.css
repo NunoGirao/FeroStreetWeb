@@ -1,0 +1,175 @@
+/* Estilo da Navbar */
+.navbar {
+    border-bottom: 1px solid black;
+    position: relative;
+    z-index: 3; /* Coloca a barra de navegação num nível superior em relação a outros elementos para garantir a visibilidade */
+  }
+  
+  /* Estilo do menu colapsado */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%; /* Garante que o menu colapsado seja exibido logo abaixo da barra de navegação */
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.927); /* Fundo semitransparente para o menu */
+  }
+  
+  /* Links da barra de navegação */
+  .navbar-nav .nav-link {
+    color: black !important; /* Força a cor dos links da barra de navegação para preto */
+  }
+  
+  /* Centraliza o logótipo e o nome */
+  .logo-container {
+    transform: translate(-50%, -50%); /* Centraliza horizontalmente e verticalmente em relação ao ponto de referência pai */
+  }
+  
+  /* Estilo da barra de pesquisa */
+  .search-bar {
+    display: flex;
+    align-items: center; /* Alinha itens ao centro verticalmente */
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 20px; /* Arredonda os cantos */
+    padding: 5px 10px; /* Adiciona espaçamento interno */
+    background-color: transparent;
+    min-width: 200px; /* Largura mínima da barra de pesquisa */
+  }
+  
+  .search-bar input {
+    border: none; /* Remove a borda padrão */
+    outline: none; /* Remove o contorno quando o campo está focado */
+    background: transparent; /* Fundo transparente */
+    color: rgb(0, 0, 0); /* Cor do texto */
+    padding-left: 5px; /* Espaçamento à esquerda */
+    width: 100%; /* O input ocupa toda a largura disponível */
+  }
+  
+  .search-bar input::placeholder {
+    color: rgb(5, 5, 5); /* Cor do texto do placeholder */
+  }
+  
+  .icon {
+    color: rgb(0, 0, 0); /* Cor dos ícones */
+    font-size: 1.5rem; /* Tamanho da fonte do ícone */
+    margin-left: 15px; /* Margem à esquerda do ícone */
+  }
+  
+  /* Estilos para o vídeo de fundo */
+  .videobanner {
+    position: relative; /* Para que elementos dentro possam ser posicionados de forma absoluta */
+    width: 100%;
+    height: 100vh; /* Ocupa toda a altura da janela de visualização */
+    overflow: hidden; /* Oculta qualquer conteúdo que transborde */
+  }
+  
+  .videobanner video {
+    position: absolute; /* Para posicionamento flexível dentro do .videobanner */
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* O vídeo cobre o contêiner sem distorção */
+    transform: translate(-50%, -50%); /* Centraliza o vídeo */
+  }
+  
+  /* Sobreposição escura no vídeo */
+  .video-dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Sobreposição escura para melhorar a legibilidade do texto sobre o vídeo */
+    z-index: 1; /* Garante que a sobreposição fique acima do vídeo */
+  }
+  
+  /* Texto sobreposto ao vídeo */
+  .video-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centraliza o texto */
+    z-index: 2; /* Garante que o texto fique acima da sobreposição escura */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinha o texto ao centro */
+  }
+  
+  /* Estilo do texto de impacto e do botão */
+  .text-impacto {
+    font-size: 3rem; /* Tamanho grande da fonte */
+    font-weight: bold; /* Texto a negrito */
+  }
+  
+  .subtext {
+    font-size: 1.5rem; /* Tamanho do texto menor para o subtítulo */
+    margin-bottom: 20px; /* Margem inferior para espaçamento */
+  }
+  
+  .btn-custom {
+    background-color: #333; /* Cor de fundo escura */
+    color: white; /* Texto em branco */
+    padding: 10px 20px; /* Espaçamento interno do botão */
+    border-radius: 5px; /* Arredonda os cantos */
+    text-decoration: none; /* Remove o sublinhado */
+  }
+  
+  .btn-custom:hover {
+    background-color: #555; /* Cor ao passar o rato */
+  }
+  
+  /* Estilo dos cartões */
+  .card-square {
+    width: 15rem; /* Largura do cartão */
+    height: 15rem; /* Altura do cartão */
+    display: flex;
+    flex-direction: column; /* Direção dos elementos dentro do cartão */
+    justify-content: space-between; /* Distribui os elementos verticalmente */
+    overflow: hidden; /* Oculta conteúdo que transborde */
+  }
+  
+  .card-square img {
+    width: 100%; /* Imagem ocupa toda a largura do cartão */
+    height: 100%; /* Imagem ocupa toda a altura do cartão */
+    object-fit: cover; /* Garante que a imagem seja cortada corretamente */
+  }
+  
+  .card-square .card-body {
+    padding: 3rem; /* Espaçamento interno do corpo do cartão */
+  }
+  
+  /* Estilo personalizado para os cartões na página de produtos */
+  .product-card {
+    transition: transform 0.2s; /* Transição suave ao passar o rato */
+    border: none;
+  }
+  .product-card:hover {
+    transform: scale(1.03); /* Efeito de aumento ao passar o rato */
+  }
+  .product-card img {
+    max-height: 500px; /* Altura máxima para a imagem */
+    object-fit: cover; /* Ajuste da imagem sem distorção */
+  }
+  
+  /* Imagem de produto na página de produto */
+  #product-image {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+  }
+  
+  /* Container da barra de pesquisa */
+  .search-container {
+    position: relative; /* Contêiner pai para posicionar os resultados */
+  }
+  
+  /* Resultados de pesquisa */
+  #search-results {
+    position: absolute; /* Posiciona em relação ao .search-container */
+    top: 100%; /* Alinha logo abaixo do input */
+    left: 0;
+    background-color: #ffffff; /* Cor de fundo branca */
+    border: 1px solid #ccc; /* Borda leve */
+    max-width: 300px; /* Largura máxima */
+    z-index: 1000; /* Sobrepõe-se a outros elementos */
+  }
+  
