@@ -25,7 +25,7 @@
     <div class="videobanner">
         <div class="video-dark-overlay"></div>
         <video autoplay muted loop playsinline>
-            <source src="vid/videofero2webm.webm" type="video/mp4">
+            <source src="vid/videofero2.webm" type="video/mp4">
         </video>
         <div class="video-overlay">
             <h2 class="text-impacto">Novidades em Breve</h2>
@@ -57,7 +57,7 @@
                     <!-- vídeo -->
                     <div class="col-md-6">
                         <video class="w-100" autoplay muted loop playsinline>
-                            <source src="vid/videoferowebm.webm" type="video/mp4">
+                            <source src="vid/videofero.webm" type="video/mp4">
                         </video>
                     </div>
                 </div>
