@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="css/navbarcss.css">
 </head>
 <body>
 
@@ -16,8 +17,8 @@
     <!-- Navbar -->
     <?php include 'includes/navbar.php';  ?>
 
-    <div class="container d-flex justify-content-center align-items-center vh-100">
-        <div class="card p-4 shadow" style="max-width: 400px; width: 100%;">
+    <div class="container d-flex justify-content-center align-items-center vh-100"> <!-- mudar isto -->
+        <div class="card p-4 shadow" style="max-width: 410px; width: 100%;">
             <h2 class="mb-3">Contacte-nos</h2>
             <p class="text-muted mb-4">Se precisar de ajuda, não hesite em contactar-nos. Vamos ajudar o mais rapidamente possível, normalmente o seu pedido será atendido dentro de 24h.</p>
             

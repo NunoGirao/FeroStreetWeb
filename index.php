@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="css/navbarcss.css">
 
     <style>
 
@@ -24,26 +25,12 @@
     <div class="videobanner">
         <div class="video-dark-overlay"></div>
         <video autoplay muted loop playsinline>
-            <source src="vid/videofero2.mp4" type="video/mp4">
+            <source src="vid/videofero2webm.webm" type="video/mp4">
         </video>
         <div class="video-overlay">
             <h2 class="text-impacto">Novidades em Breve</h2>
             <p class="subtext">Não perca</p>
-            <a href="camisas.php" class="btn btn-custom">Saiba Mais</a>
-        </div>
-    </div>
-
-    <!-- Artigos em Destaque -->
-    <div class="mt-2 mb-0">
-        <div class="text-dark p-3 mb-5 text-center fs-2" style="background-color: #ffffff; border-bottom: 2px solid black; border-top: 2px solid black;">
-            Artigos em Destaque
-        </div>
-        <div class="container">
-            <div class="row justify-content-center mb-5">
-                <div class="col-12 d-flex flex-wrap gap-5 justify-content-center" id="featured-products-container">
-                    <!-- Os produtos em destaque serão carregados aqui dinamicamente -->
-                </div>
-            </div>
+             <!--<a href="#" class="btn btn-custom">Saiba Mais</a>-->
         </div>
     </div>
 
@@ -70,7 +57,7 @@
                     <!-- vídeo -->
                     <div class="col-md-6">
                         <video class="w-100" autoplay muted loop playsinline>
-                            <source src="vid/videofero.mp4" type="video/mp4">
+                            <source src="vid/videoferowebm.webm" type="video/mp4">
                         </video>
                     </div>
                 </div>
@@ -78,7 +65,20 @@
         </div>
     </div>
 
-    
+    <!-- Artigos em Destaque -->
+    <div class="mt-2 mb-0">
+        <div class="text-dark p-3 mb-5 text-center fs-2" style="background-color: #ffffff; border-bottom: 2px solid black; border-top: 2px solid black;">
+            Artigos em Destaque
+        </div>
+        <div class="container">
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 d-flex flex-wrap gap-5 justify-content-center" id="featured-products-container">
+                    <!-- Os produtos em destaque serão carregados aqui dinamicamente -->
+                </div>
+            </div>
+        </div>
+    </div>
+
     <?php include 'includes/footer.php';  ?>
 
 
@@ -86,7 +86,7 @@
 
 
     <script>
-        // Carregar os produtos do ficheiro json
+        // Carregar os produtos do ficheiro JSON
         let produtos = [];
 
         document.addEventListener("DOMContentLoaded", () => {
@@ -124,7 +124,9 @@
             // Redirecionar para a página do produto com base no ID
             window.location.href = `pagprod.php?id=${productId}`;
         }
+    
     </script>
+     
 
     <?php
     // script barra pesquisa

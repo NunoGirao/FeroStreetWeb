@@ -1,58 +1,4 @@
-/* Estilo da Navbar */
-.navbar {
-    border-bottom: 1px solid black;
-    position: relative;
-    z-index: 3; /* Coloca a barra de navegação num nível superior em relação a outros elementos para garantir a visibilidade */
-  }
-  
-  /* Estilo do menu colapsado */
-  .navbar-collapse {
-    position: absolute;
-    top: 100%; /* Garante que o menu colapsado seja exibido logo abaixo da barra de navegação */
-    left: 0;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.927); /* Fundo semitransparente para o menu */
-  }
-  
-  /* Links da barra de navegação */
-  .navbar-nav .nav-link {
-    color: black !important; /* Força a cor dos links da barra de navegação para preto */
-  }
-  
-  /* Centraliza o logótipo e o nome */
-  .logo-container {
-    transform: translate(-50%, -50%); /* Centraliza horizontalmente e verticalmente em relação ao ponto de referência pai */
-  }
-  
-  /* Estilo da barra de pesquisa */
-  .search-bar {
-    display: flex;
-    align-items: center; /* Alinha itens ao centro verticalmente */
-    border: 1px solid rgb(0, 0, 0);
-    border-radius: 20px; /* Arredonda os cantos */
-    padding: 5px 10px; /* Adiciona espaçamento interno */
-    background-color: transparent;
-    min-width: 200px; /* Largura mínima da barra de pesquisa */
-  }
-  
-  .search-bar input {
-    border: none; /* Remove a borda padrão */
-    outline: none; /* Remove o contorno quando o campo está focado */
-    background: transparent; /* Fundo transparente */
-    color: rgb(0, 0, 0); /* Cor do texto */
-    padding-left: 5px; /* Espaçamento à esquerda */
-    width: 100%; /* O input ocupa toda a largura disponível */
-  }
-  
-  .search-bar input::placeholder {
-    color: rgb(5, 5, 5); /* Cor do texto do placeholder */
-  }
-  
-  .icon {
-    color: rgb(0, 0, 0); /* Cor dos ícones */
-    font-size: 1.5rem; /* Tamanho da fonte do ícone */
-    margin-left: 15px; /* Margem à esquerda do ícone */
-  }
+
   
   /* Estilos para o vídeo de fundo */
   .videobanner {
@@ -117,7 +63,7 @@
     background-color: #555; /* Cor ao passar o rato */
   }
   
-  /* Estilo dos cartões */
+  /* Estilo dos cartões */ /* ver melhor isto */ 
   .card-square {
     width: 15rem; /* Largura do cartão */
     height: 15rem; /* Altura do cartão */

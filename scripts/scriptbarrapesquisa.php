@@ -1,8 +1,8 @@
 <script>
-    // Array para armazenar os produtos 
+    // Array para armazenar os produtos carregados do ficheiro JSON para pesquisa
     let produtosPesquisa = [];
 
-    // Carrega os produtos 
+    // Carrega os produtos a partir do ficheiro JSON quando a página é carregada
     document.addEventListener("DOMContentLoaded", () => {
         // Faz um pedido ao ficheiro 'produtos.json'
         fetch('produtos.json')
@@ -13,7 +13,7 @@
             .catch(error => console.error("Erro ao carregar os produtos:", error)); // Caso haja um erro, mostra uma mensagem na consola
     });
 
-    
+    // Função que realiza a pesquisa
     function performSearch() {
         // Obtém o valor inserido no campo de pesquisa e converte para minúsculas
         const query = document.getElementById('search-input').value.toLowerCase();
@@ -36,7 +36,7 @@
                     // Cria um elemento para cada resultado encontrado
                     const resultItem = document.createElement('div');
                     resultItem.classList.add('result-item');
-                    
+                    // Define o conteúdo HTML do item de resultado (imagem, nome e preço)
                     resultItem.innerHTML = `
                         <img src="${produto.foto}" alt="${produto.nome}" width="50" height="50" style="margin-right: 10px;">
                         <strong>${produto.nome}</strong> 

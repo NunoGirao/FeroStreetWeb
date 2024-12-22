@@ -1,134 +1,197 @@
 [
-  {
-    "id": 1,
-    "nome": "Camisa Dangerous",
-    "preço": "29,90€",
-    "descrição": "Uma camisa de riscas finas em tons de vermelho e branco, com um visual marcante e ousado. Ideal para quem quer destacar-se, oferece um toque casual e descontraído, com o logótipo bordado no peito. Perfeita para ocasiões informais e para quem aprecia um visual diferenciado.",
-    "foto": "imgs/camisas/camisa1.jpg",
-    "tipo": "Camisa",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": true
-  },
-  {
-    "id": 2,
-    "nome": "Camisa Strength",
-    "preço": "29,90€",
-    "descrição": "Esta camisa apresenta riscas azuis e brancas, transmitindo uma sensação de confiança e estilo. As mangas dobradas acrescentam um toque descontraído, enquanto o tecido de qualidade e o logótipo bordado conferem sofisticação ao look. Versátil e fácil de combinar, é ideal para qualquer evento casual.",
-    "foto": "imgs/camisas/camisa2.jpg",
-    "tipo": "Camisa",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 3,
-    "nome": "Camisa Courage",
-    "preço": "29,90€",
-    "descrição": "Com riscas verticais em tons de azul claro e branco, esta camisa proporciona um visual limpo e moderno. O corte impecável e o design clássico tornam-na uma escolha perfeita para quem valoriza conforto sem abdicar de estilo. Óptima para ambientes descontraídos ou encontros informais.",
-    "foto": "imgs/camisas/camisa3.jpg",
-    "tipo": "Camisa",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 4,
-    "nome": "Camisa Simba",
-    "preço": "29,90€",
-    "descrição": "Uma camisa com riscas mais vibrantes em azul e amarelo, que se destaca pelo seu visual jovem e descontraído. Perfeita para dias de sol e para conjugar com acessórios. Dá um toque de personalidade ao look, ideal para quem aprecia um estilo moderno e descomprometido.",
-    "foto": "imgs/camisas/camisa4.jpg",
-    "tipo": "Camisa",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": true
-  },
-  {
-    "id": 5,
-    "nome": "Camisa Ocean",
-    "preço": "29,90€",
-    "descrição": "Com riscas azuis e brancas, esta camisa é inspirada nas cores do oceano, evocando um estilo náutico. Elegante e, ao mesmo tempo, casual, é uma peça versátil que pode ser usada tanto em eventos informais como em combinações mais formais.",
-    "foto": "imgs/camisas/camisa5.jpg",
-    "tipo": "Camisa",
-    "tamanho": ["S", "M", "L", "XL"],
-   "destaque": false
-  },
-
-  {
-    "id": 6,
-    "nome": "Sweat Leo-Navy",
-    "preço": "49,90€",
-    "descrição": "Uma sweatshirt com capuz em azul marinho, decorada com um gráfico geométrico em linhas finas na parte frontal, que adiciona um toque moderno e único. Com um tecido confortável e um design versátil, é perfeita para os dias mais frios, mantendo um estilo casual e elegante ao mesmo tempo. Ideal para combinar com jeans ou roupa desportiva.",
-    "foto": "imgs/sweats/sweat1.jpg",
-    "tipo": "Sweat",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 7,
-    "nome": "Sweat Leo-Cinza",
-    "preço": "49,90€",
-    "descrição": "Esta sweatshirt cinzenta com capuz apresenta o mesmo design geométrico minimalista, destacando-se pelo seu visual descontraído e contemporâneo. O tecido macio oferece conforto para o dia-a-dia, enquanto o estilo simples e elegante torna-a uma peça fácil de combinar com diferentes looks. Óptima para quem gosta de estar confortável e com estilo.",
-    "foto": "imgs/sweats/sweat2.jpg",
-    "tipo": "Sweat",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": true
-  },
-  {
-    "id": 8,
-    "nome": "Sweat Fero Club",
-    "preço": "49,90€",
-    "descrição": "Uma sweatshirt branca com capuz, destacada por uma frase motivacional estampada na parte frontal: “Own Your Ferocity”. Com um design simples e moderno, esta peça representa atitude e confiança. Feita para um estilo urbano e descontraído, é perfeita para quem valoriza conforto sem abdicar de uma mensagem forte no look.",
-    "foto": "imgs/sweats/sweat3.jpg",
-    "tipo": "Sweat",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-
-  {
-    "id": 9,
-    "nome": "T-Shirt-Savannah",
-    "preço": "29,90€",
-    "descrição": "Uma t-shirt branca com uma ilustração minimalista em azul, inspirada na savana. Esta peça é leve e descontraída, perfeita para quem aprecia um visual simples mas com personalidade. Ideal para dias de sol ou para complementar um look casual com um toque de originalidade.",
-    "foto": "imgs/tshirts/tshirt1.jpg",
-    "tipo": "T-Shirt",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 10,
-    "nome": "T-Shirt Wild",
-    "preço": "29,90€",
-    "descrição": "Com detalhes minimalistas e uma gola com linhas contrastantes, esta t-shirt branca é ideal para um estilo descontraído e desportivo. O design é simples, mas oferece um toque urbano e moderno, perfeito para o dia-a-dia ou para atividades ao ar livre.",
-    "foto": "imgs/tshirts/tshirt2.jpg",
-    "tipo": "T-Shirt",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 11,
-    "nome": "T-Shirt Reality",
-    "preço": "29,90€",
-    "descrição": "Uma t-shirt branca com um estampado gráfico nas costas que diz 'Reality' repetido, oferecendo uma estética urbana e jovem. Esta peça é ideal para quem gosta de um estilo mais streetwear, trazendo atitude e personalidade ao look. Óptima para saídas informais e dias relaxados.",
-    "foto": "imgs/tshirts/tshirt3.jpg",
-    "tipo": "T-Shirt",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 12,
-    "nome": "T-Shirt Planet",
-    "preço": "29,90€",
-    "descrição": "Esta t-shirt preta apresenta um gráfico detalhado nas costas, inspirado no espaço, com um design moderno e arrojado. Perfeita para quem gosta de um look casual com um toque alternativo, esta peça destaca-se e é ideal para quem quer sair do comum com um estilo único.",
-    "foto": "imgs/tshirts/tshirt4_2.jpg",
-    "tipo": "T-Shirt",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": false
-  },
-  {
-    "id": 13,
-    "nome": "T-Shirt No Bad Vibes",
-    "preço": "29,90€",
-    "descrição": "Uma t-shirt preta com o logótipo 'Fero Club' estampado nas costas, remetendo a um estilo descontraído e confortável. Com um visual jovem e actual, esta peça é ideal para transmitir boas vibrações e adoptar um estilo relaxado e moderno, perfeito para o quotidiano.",
-    "foto": "imgs/tshirts/tshirt5_2.jpg",
-    "tipo": "T-Shirt",
-    "tamanho": ["S", "M", "L", "XL"],
-    "destaque": true
-  }
+    {
+        "id": 1,
+        "nome": "Camisa Dangerous",
+        "preço": "29,90",
+        "descrição": "Uma camisa de riscas finas em tons de vermelho e branco, com um visual marcante e ousado. Ideal para quem quer destacar-se, oferece um toque casual e descontraído, com o logótipo bordado no peito. Perfeita para ocasiões informais e para quem aprecia um visual diferenciado.",
+        "foto": "imgs\/camisas\/camisa1.jpg",
+        "tipo": "Camisa",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": true
+    },
+    {
+        "id": 2,
+        "nome": "Camisa Strength",
+        "preço": "29,90",
+        "descrição": "Esta camisa apresenta riscas azuis e brancas, transmitindo uma sensação de confiança e estilo. As mangas dobradas acrescentam um toque descontraído, enquanto o tecido de qualidade e o logótipo bordado conferem sofisticação ao look. Versátil e fácil de combinar, é ideal para qualquer evento casual.",
+        "foto": "imgs\/camisas\/camisa2.jpg",
+        "tipo": "Camisa",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 3,
+        "nome": "Camisa Courage",
+        "preço": "29,90",
+        "descrição": "Com riscas verticais em tons de azul claro e branco, esta camisa proporciona um visual limpo e moderno. O corte impecável e o design clássico tornam-na uma escolha perfeita para quem valoriza conforto sem abdicar de estilo. Óptima para ambientes descontraídos ou encontros informais.",
+        "foto": "imgs\/camisas\/camisa3.jpg",
+        "tipo": "Camisa",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 4,
+        "nome": "Camisa Simba",
+        "preço": "29,90",
+        "descrição": "Uma camisa com riscas mais vibrantes em azul e amarelo, que se destaca pelo seu visual jovem e descontraído. Perfeita para dias de sol e para conjugar com acessórios. Dá um toque de personalidade ao look, ideal para quem aprecia um estilo moderno e descomprometido.",
+        "foto": "imgs\/camisas\/camisa4.jpg",
+        "tipo": "Camisa",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 5,
+        "nome": "Camisa Ocean",
+        "preço": "29,90",
+        "descrição": "Com riscas azuis e brancas, esta camisa é inspirada nas cores do oceano, evocando um estilo náutico. Elegante e, ao mesmo tempo, casual, é uma peça versátil que pode ser usada tanto em eventos informais como em combinações mais formais.",
+        "foto": "imgs\/camisas\/camisa5.jpg",
+        "tipo": "Camisa",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 6,
+        "nome": "Sweat Leo-Navy",
+        "preço": "49,90",
+        "descrição": "Uma sweatshirt com capuz em azul marinho, decorada com um gráfico geométrico em linhas finas na parte frontal, que adiciona um toque moderno e único. Com um tecido confortável e um design versátil, é perfeita para os dias mais frios, mantendo um estilo casual e elegante ao mesmo tempo. Ideal para combinar com jeans ou roupa desportiva.",
+        "foto": "imgs\/sweats\/sweat1.jpg",
+        "tipo": "Sweat",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": true
+    },
+    {
+        "id": 7,
+        "nome": "Sweat Leo-Cinza",
+        "preço": "29,90",
+        "descrição": "Esta sweatshirt cinzenta com capuz apresenta o mesmo design geométrico minimalista, destacando-se pelo seu visual descontraído e contemporâneo. O tecido macio oferece conforto para o dia-a-dia, enquanto o estilo simples e elegante torna-a uma peça fácil de combinar com diferentes looks. Óptima para quem gosta de estar confortável e com estilo.",
+        "foto": "imgs\/sweats\/sweat2.jpg",
+        "tipo": "Sweat",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": true
+    },
+    {
+        "id": 8,
+        "nome": "Sweat Fero Club",
+        "preço": "29,90",
+        "descrição": "Uma sweatshirt branca com capuz, destacada por uma frase motivacional estampada na parte frontal: 'Own Your Ferocity'. Com um design simples e moderno, esta peça representa atitude e confiança. Feita para um estilo urbano e descontraído, é perfeita para quem valoriza conforto sem abdicar de uma mensagem forte no look.",
+        "foto": "imgs\/sweats\/sweat3.jpg",
+        "tipo": "Sweat",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 9,
+        "nome": "T-Shirt-Savannah",
+        "preço": "29,90",
+        "descrição": "Uma t-shirt branca com uma ilustração minimalista em azul, inspirada na savana. Esta peça é leve e descontraída, perfeita para quem aprecia um visual simples mas com personalidade. Ideal para dias de sol ou para complementar um look casual com um toque de originalidade.",
+        "foto": "imgs\/tshirts\/tshirt1.jpg",
+        "tipo": "T-Shirt",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": true
+    },
+    {
+        "id": 10,
+        "nome": "T-Shirt Wild",
+        "preço": "29,90",
+        "descrição": "Com detalhes minimalistas e uma gola com linhas contrastantes, esta t-shirt branca é ideal para um estilo descontraído e desportivo. O design é simples, mas oferece um toque urbano e moderno, perfeito para o dia-a-dia ou para atividades ao ar livre.",
+        "foto": "imgs\/tshirts\/tshirt2.jpg",
+        "tipo": "T-Shirt",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 11,
+        "nome": "T-Shirt Reality",
+        "preço": "29,90",
+        "descrição": "Uma t-shirt branca com um estampado gráfico nas costas que diz 'Reality' repetido, oferecendo uma estética urbana e jovem. Esta peça é ideal para quem gosta de um estilo mais streetwear, trazendo atitude e personalidade ao look. Óptima para saídas informais e dias relaxados.",
+        "foto": "imgs\/tshirts\/tshirt3.jpg",
+        "tipo": "T-Shirt",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 12,
+        "nome": "T-Shirt Planet",
+        "preço": "25",
+        "descrição": "Esta t-shirt preta apresenta um gráfico detalhado nas costas, inspirado no espaço, com um design moderno e arrojado. Perfeita para quem gosta de um look casual com um toque alternativo, esta peça destaca-se e é ideal para quem quer sair do comum com um estilo único.",
+        "foto": "imgs\/tshirts\/tshirt4_2.jpg",
+        "tipo": "T-Shirt",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    },
+    {
+        "id": 13,
+        "nome": "T-Shirt No Bad Vibes",
+        "preço": "50",
+        "descrição": "Uma t-shirt preta com o logótipo 'Fero Club' estampado nas costas, remetendo a um estilo descontraído e confortável. Com um visual jovem e atual, esta peça é ideal para transmitir boas vibrações e adotar um estilo relaxado e moderno, perfeito para o quotidiano.",
+        "foto": "imgs\/tshirts\/tshirt5_2.jpg",
+        "tipo": "T-Shirt",
+        "tamanho": [
+            "S",
+            "M",
+            "L",
+            "XL"
+        ],
+        "destaque": false
+    }
 ]

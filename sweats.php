@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/css2.css">
+    <link rel="stylesheet" href="css/navbarcss.css">
     <style>
         
     </style>
@@ -57,7 +58,7 @@
         const productCard = document.createElement("div");
         productCard.classList.add("col-lg-4", "col-md-6", "col-sm-12");
   
-        // Adiciona o evento de redirecionar à página de detalhes do produto com o ID 
+        // Adiciona o evento de clique para redirecionar à página de detalhes do produto com o ID no URL
         productCard.innerHTML = `
           <div class="card product-card h-100" onclick="window.location.href='pagprod.php?id=${produto.id}'">
             <img src="${produto.foto}" class="card-img-top" alt="${produto.nome}">
