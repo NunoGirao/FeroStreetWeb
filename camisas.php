@@ -7,75 +7,55 @@
 
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="css/css2.css">
-    <link rel="stylesheet" href="css/navbarcss.css">
-    <style>
-          
-    </style>
+    <link rel="stylesheet" href="css/css2.css" />
+    <link rel="stylesheet" href="css/navbarcss.css" />
   </head>
 
   <body>
     <!-- Navbar -->
-    <?php include 'includes/navbar.php';  ?>
+    <?php include 'includes/navbar.php'; ?>
 
     <!-- Container para os produtos -->
     <div class="container my-5">
       <div id="product-list" class="row g-4">
-        <!-- Os produtos serão carregados aqui dinamicamente -->
+        <?php
+        // Nome do arquivo JSON
+        $jsonFile = 'produtos.json';
+
+        // Verifica se o arquivo JSON existe
+        if (file_exists($jsonFile)) {
+          // Carrega os produtos do arquivo JSON
+          $produtos = json_decode(file_get_contents($jsonFile), true);
+
+          // Filtra os produtos que são apenas camisas
+          $camisas = array_filter($produtos, function ($produto) {
+            return $produto['tipo'] === 'Camisa';
+          });
+
+          // Renderiza os produtos
+          foreach ($camisas as $produto) {
+            echo '
+            <div class="col-lg-4 col-md-6 col-sm-12">
+              <div class="card product-card h-100" onclick="window.location.href=\'pagprod.php?id=' . $produto['id'] . '\'">
+                <img src="' . htmlspecialchars($produto['foto'], ENT_QUOTES) . '" class="card-img-top" alt="' . htmlspecialchars($produto['nome'], ENT_QUOTES) . '">
+                <div class="card-body text-center">
+                  <h5 class="card-title">' . htmlspecialchars($produto['nome'], ENT_QUOTES) . '</h5>
+                  <p class="card-text fw-bold">€' . htmlspecialchars($produto['preço'], ENT_QUOTES) . '</p>
+                </div>
+              </div>
+            </div>';
+          }
+        } else {
+          echo '<p class="text-danger">Erro: O arquivo de produtos não foi encontrado.</p>';
+        }
+        ?>
       </div>
     </div>
+
+    <!-- Footer -->
+    <?php include 'includes/footer.php'; ?>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <?php include 'scripts/scriptbarrapesquisa.php'; ?>
   </body>
-
-  <?php include 'includes/footer.php';  ?>
-
-  <script src="js/bootstrap.bundle.min.js"></script>
-  <script>
-    async function loadProdutos() {
-      try {
-        const response = await fetch("produtos.json");
-        if (!response.ok) {
-          throw new Error(`Erro ao buscar o arquivo JSON: ${response.status}`);
-        }
-        const produtos = await response.json();
-  
-        // Filtrando os produtos que são apenas camisas
-        const camisas = produtos.filter((produto) => produto.tipo === "Camisa");
-  
-        renderProdutos(camisas);
-      } catch (error) {
-        console.error("Erro ao carregar os produtos:", error);
-      }
-    }
-  
-    // Função para renderizar os produtos na página
-    function renderProdutos(produtos) {
-      const productContainer = document.getElementById("product-list");
-      productContainer.innerHTML = ""; // Limpa o container antes de adicionar os produtos
-  
-      produtos.forEach((produto) => {
-        const productCard = document.createElement("div");
-        productCard.classList.add("col-lg-4", "col-md-6", "col-sm-12");
-  
-        // Adiciona o evento de clique para redirecionar à página de detalhes do produto com o ID no URL
-        productCard.innerHTML = `
-          <div class="card product-card h-100" onclick="window.location.href='pagprod.php?id=${produto.id}'">
-            <img src="${produto.foto}" class="card-img-top" alt="${produto.nome}">
-            <div class="card-body text-center">
-              <h5 class="card-title">${produto.nome}</h5>
-              <p class="card-text fw-bold">€${produto.preço}</p>
-            </div>
-          </div>
-        `;
-        productContainer.appendChild(productCard);
-      });
-    }
-  
-    // Carrega os produtos ao iniciar a página
-    document.addEventListener("DOMContentLoaded", loadProdutos);
-  </script>
-  <?php
-    // script barra pesquisa
-    include 'scripts/scriptbarrapesquisa.php'; 
-    ?>
-
 </html>
