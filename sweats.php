@@ -28,12 +28,12 @@
           $produtos = json_decode(file_get_contents($jsonFile), true);
 
           // Filtra os produtos que são apenas Sweats
-          $camisas = array_filter($produtos, function ($produto) {
+          $sweats = array_filter($produtos, function ($produto) {
             return $produto['tipo'] === 'Sweat';
           });
 
           // Renderiza os produtos
-          foreach ($camisas as $produto) {
+          foreach ($sweats as $produto) {
             echo '
             <div class="col-lg-4 col-md-6 col-sm-12">
               <div class="card product-card h-100" onclick="window.location.href=\'pagprod.php?id=' . $produto['id'] . '\'">
