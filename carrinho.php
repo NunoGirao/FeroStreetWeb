@@ -153,5 +153,6 @@
       renderCartItems(cartData);
     });
   </script>
+  <script src="scripts/scriptbarrapesquisa.js"></script>
 </body>
 </html>

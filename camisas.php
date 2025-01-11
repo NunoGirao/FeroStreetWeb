@@ -56,6 +56,6 @@
     <?php include 'includes/footer.php'; ?>
 
     <script src="js/bootstrap.bundle.min.js"></script>
-    <?php include 'scripts/scriptbarrapesquisa.php'; ?>
+    <script src="scripts/scriptbarrapesquisa.js"></script>
   </body>
 </html>

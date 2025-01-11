@@ -140,5 +140,6 @@
       addToCartButton.addEventListener("click", addToCart);
     });
   </script>
+  <script src="scripts/scriptbarrapesquisa.js"></script>
 </body>
 </html>

@@ -128,10 +128,9 @@
     </script>
      
 
-    <?php
-    // script barra pesquisa
-    include 'scripts/scriptbarrapesquisa.php';
-    ?>
+    
+     <script src="scripts/scriptbarrapesquisa.js"></script>
+   
 
     <script>
         function redirectTo(url) {
